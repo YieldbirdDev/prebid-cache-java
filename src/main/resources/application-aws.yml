@@ -1,4 +1,10 @@
-server.port: 5000
+server.port: 2424
 
 # redis
-spring.redis.host: ${SPRING_REDIS_HOST}
+spring:
+  redis:
+    host: ${SPRING_REDIS_HOST}
+    port: 6379
+    timeout: 300
+
+api.path: /pbc/cache
